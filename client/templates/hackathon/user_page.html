@@ -1,22 +1,22 @@
 <template name="userProfile">
   <body>
 
-       <div id="profile-form">
+     <div id="profile-form">
         <p>
             {{#with userData}}
             <input type="text" id="profile_first_name" placeholder="First Name" value="{{first_name}}">
             <input type="text" id="profile_last_name" placeholder="Last Name" value="{{last_name}}">
-                      <input type="text" id="profile_email" placeholder="Username" value="{{username}}">
-          <input type="email" id="profile_email" placeholder="Email" value="{{email_address}}">
+            <input type="text" id="profile_email" placeholder="Username" value="{{username}}">
+            <input type="email" id="profile_email" placeholder="Email" value="{{email_address}}">
             {{/with}}
-                      <input type="text" id="profile_first_name" placeholder="First Name" value="{{first_name}}">
+            <input type="text" id="profile_first_name" placeholder="First Name" value="{{first_name}}">
             <input type="text" id="profile_last_name" placeholder="Last Name" value="{{last_name}}">
-                      <input type="text" id="profile_email" placeholder="Username" value="{{username}}">
-          <input type="email" id="profile_email" placeholder="Email" value="{{email_address}}">
+            <input type="text" id="profile_email" placeholder="Username" value="{{username}}">
+            <input type="email" id="profile_email" placeholder="Email" value="{{email_address}}">
         </p>
     </div>
     <div id="submit-btn">
         <input type="submit" id="submit_profile_btn" class="btn btn-primary">
     </div>
-  </body>
+</body>
 </template>
