@@ -12,28 +12,24 @@ Template.userProfile.events({
     ,email = $('#profile_email').val()
     ,email_lower_case = email.toLowerCase()
     ;
-    console.log(first_name + " this is first name");
     var associatedAccount = UserAccounts.findOne({associatedUserID: Meteor.user()._id});
-            console.log("THIS IS THE ID" + Meteor.user()._id);
-    console.log("THI SIS THE ASSOCIATED ACCOUNT:" + associatedAccount);
-    if (associatedAccount) {
-      console.log("ALREADY THERE");
-      
+    if (typeof(associatedAccount) == "undefined") {    
       UserAccounts.insert({
         associatedUserID: Meteor.user()._id,
         firstName:first_name,
         lastName:last_name,
         email:email_lower_case,
+      }, function(error, user_id){
+        console.log(error);
       })
     }
     else {
-        console.log("NOT THERE");
-     UserAccounts.update({_id: associatedAccount._id}, {
+      UserAccounts.update({_id: associatedAccount._id}, {$set:{
       firstName:first_name,
       lastName:last_name,
       email:email_lower_case,
       
-    })
+      }})
    }
  }
 });
