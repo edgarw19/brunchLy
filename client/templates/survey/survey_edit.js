@@ -1,9 +1,9 @@
-Template.profileEdit.created = function() {
+Template.surveyEdit.created = function() {
   console.log('created!');	
   // Session.set('postSubmitErrors', {});
 };
 
-Template.profileEdit.helpers({
+Template.surveyEdit.helpers({
   profile: function() {
     var ret = Profiles.findOne({userId: Meteor.userId()});
     if (!ret) {
@@ -46,7 +46,7 @@ Template.profileEdit.helpers({
 //   }
 // });
 
-Template.profileEdit.events({
+Template.surveyEdit.events({
   'submit form': function(e) {
     e.preventDefault();
     

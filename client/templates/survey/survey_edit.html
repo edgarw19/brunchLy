@@ -1,4 +1,4 @@
-<template name="profileEdit">
+<template name="surveyEdit">
   <form class="main form">
 
     {{#if currentUser}}
@@ -106,6 +106,7 @@
 
     {{else}}
       <label class="control-label"> please log in! </label>
+      <script>window.location.replace("./");</script>
     {{/if}}
   </form>
 
