@@ -26,7 +26,7 @@ function getPrevBrunches(p){
 }
 
 function buildMatches(brunchers){
-  var MAX = 1000;
+  var MAX = Number.MAX_VALUE;
   var totalBrunchers = brunchers.length;
   var numPeopleToBrunchWith = 2;
   var individualScores = [];
@@ -72,8 +72,8 @@ function buildMatches(brunchers){
           var tempPos = firstPos;
           firstMin = currentMSD;
           firstPos = j;
-          secondMin = temp;
-          secondPos = temp;
+          secondMin = tempValue;
+          secondPos = tempPos;
         }
         else if (currentMSD < secondMin){
           secondMin = currentMSD;
@@ -97,8 +97,10 @@ function buildMatches(brunchers){
       peopleAlreadyMatched.push(i);
     }
     else {
+            peopleToBrunchWith[i][0] = null;
     }
   }
+  console.log(peopleToBrunchWith);
   console.log("FINISHED MATCHING");
 
 }

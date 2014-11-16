@@ -18,34 +18,39 @@ if (Posts.find().count() === 0) {
 if (Dummies.find().count() === 0) {
   Dummies.insert({
     email: "bob",
-    values: [1,2,3,4,5, 6]
+    values: [5, 2, 3, 4, 5]
     , prevBrunches: []
   });
 
   Dummies.insert({
         email: "joe",
-    values: [2,3,4,5,6,7]
+    values: [1, 3, 3, 4, 5]
         , prevBrunches: []
   });
 
   Dummies.insert({
         email: "kai",
-    values: [2,3,4,52,6,125]
+    values:[1, 3, 3, 4, 5]
         , prevBrunches: []
   });
     Dummies.insert({
         email: "liz",
-    values: [2,3,4,52,6,7]
+    values:[1, 3, 3, 4, 5]
           , prevBrunches: []
   });
     Dummies.insert({
         email: "taylor",
-    values: [2,3,4,52,35,7]
+    values: [1, 4, 3, 4, 5]
           , prevBrunches: []
   });
     Dummies.insert({
         email: "potato",
-    values: [2,15,4,52,6,7]
+    values:[1, 2, 3, 4, 1]
+          , prevBrunches: []
+  });
+      Dummies.insert({
+        email: "john",
+    values:[1, 3, 3, 4, 5]
           , prevBrunches: []
   });
 }
