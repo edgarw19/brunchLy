@@ -35,5 +35,6 @@ Template.userpage.rendered = function() {
 	// // draw line chart
 	console.log('have', radar);
 	new Chart(radar).Radar(data,{
+		pointLabelFontSize: 15,
 	      responsive: true});
 }
