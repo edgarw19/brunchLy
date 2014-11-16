@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"hack.sublime-workspace"
+			],
+			"folder_exclude_patterns":
+			[
+				".meteor"
+				// "public"
+			],
+			"path": "/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor"
+		},
+		{
+			"path": "/Users/Joanna/HackPrinceton_Fall2014/simple-todos"
+		}
+	]
+}
