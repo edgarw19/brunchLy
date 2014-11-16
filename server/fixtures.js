@@ -17,47 +17,70 @@ if (Posts.find().count() === 0) {
 
 if (Dummies.find().count() === 0) {
   Dummies.insert({
-    email: "bob",
+    email: "joannajw@princeton.edu",
     values: [5, 2, 3, 4, 5]
     , prevBrunches: []
   });
 
   Dummies.insert({
-        email: "joe",
-    values: [1, 3, 3, 4, 5]
-        , prevBrunches: []
+    email: "edgarw@princeton.edu",
+    values: [5, 2, 3, 4, 5]
+    , prevBrunches: []
   });
 
   Dummies.insert({
-        email: "kai",
-    values:[1, 3, 3, 4, 5]
-        , prevBrunches: []
+    email: "yichengs@princeton.edu",
+    values: [5, 2, 3, 4, 5]
+    , prevBrunches: []
   });
-    Dummies.insert({
-        email: "liz",
-    values:[1, 3, 3, 4, 5]
-          , prevBrunches: []
-  });
-    Dummies.insert({
-        email: "taylor",
-    values: [1, 4, 3, 4, 5]
-          , prevBrunches: []
-  });
-    Dummies.insert({
-        email: "potato",
-    values:[1, 2, 3, 4, 1]
-          , prevBrunches: []
-  });
-      Dummies.insert({
-        email: "john",
-    values:[1, 3, 3, 4, 5]
-          , prevBrunches: []
-  });
-        Dummies.insert({
-        email: "tim",
-    values:[1, 3, 3, 4, 5]
-          , prevBrunches: []
-  });
+  // Dummies.insert({
+  //   email: "joanna.j.wang@princeton.edu",
+  //   values: [1, 1, 1, 1, 1]
+  //   , prevBrunches: []
+  // });
+
+  // Dummies.insert({
+  //   email: "bob",
+  //   values: [5, 2, 3, 4, 5]
+  //   , prevBrunches: []
+  // });
+
+  // Dummies.insert({
+  //       email: "joe",
+  //   values: [1, 3, 3, 4, 5]
+  //       , prevBrunches: []
+  // });
+
+  // Dummies.insert({
+  //       email: "kai",
+  //   values:[1, 3, 3, 4, 5]
+  //       , prevBrunches: []
+  // });
+  //   Dummies.insert({
+  //       email: "liz",
+  //   values:[1, 3, 3, 4, 5]
+  //         , prevBrunches: []
+  // });
+  //   Dummies.insert({
+  //       email: "taylor",
+  //   values: [1, 4, 3, 4, 5]
+  //         , prevBrunches: []
+  // });
+  //   Dummies.insert({
+  //       email: "potato",
+  //   values:[1, 2, 3, 4, 1]
+  //         , prevBrunches: []
+  // });
+  //     Dummies.insert({
+  //       email: "john",
+  //   values:[1, 3, 3, 4, 5]
+  //         , prevBrunches: []
+  // });
+  //       Dummies.insert({
+  //       email: "tim",
+  //   values:[1, 3, 3, 4, 5]
+  //         , prevBrunches: []
+  // });
 }
 
 
