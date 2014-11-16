@@ -79,7 +79,7 @@ Template.surveyEdit.events({
         return throwError(error.reason);
       
       console.log('reroute', result);
-      Router.go('homePage', {_id: result._id});  
+      Router.go('userpage', {_id: result._id});
     });
   }
 });

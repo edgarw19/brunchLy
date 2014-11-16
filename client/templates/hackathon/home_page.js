@@ -123,7 +123,6 @@ Template.homePage.events({
 
    a(); 
    evt.preventDefault(); 
-    buildMatches(Dummies.find().fetch());
    return false;
 
   }
