@@ -51,7 +51,18 @@ Template.profileEdit.events({
     e.preventDefault();
     
     var ratings = $(e.target).find('[name=rating]');
+    var grouped = [0, 0, 0, 0, 0];
     var answers = {};
+    //for (var i = 0; i < ratings.length; i++) {
+    ratings.each(function (i, rating) {
+        grouped[Math.floor(i/3)] += $(rating).val();
+    });
+
+    grouped = grouped.map(function (x) {return x / 3.0});
+    console.log('grouped', grouped);
+
+    answers['grouped'] = grouped;
+
     ratings.each(function (el, rating) {
       answers[$(rating).attr('data-desc')] = $(rating).val();
     });
