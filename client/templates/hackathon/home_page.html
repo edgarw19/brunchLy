@@ -1,5 +1,11 @@
 <template name="homePage">
 
+    {{#if currentUser}} 
+    <script>
+        window.location.replace("./profile");
+    </script>
+    {{/if}}
+
 
   <div class="brand">
   <section id="banner">
