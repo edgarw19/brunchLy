@@ -5,8 +5,10 @@ Template.userpage.events({
   	Profiles.update({_id: profile._id}, {$set: {'signed_up': !profile.signed_up}});
   },
   'click #admin-special': function(e) {
-  	var matches = Meteor.call('makeMatches');
-  	console.log(matches);
+  	console.log('TO BE MATCHED: ', Profiles.find({signed_up: true}).fetch());
+  	var matches = Meteor.call('makeMatches', function (err, data) {
+  		console.log('done with matches', err, data);
+  	});
   }
 });
 
