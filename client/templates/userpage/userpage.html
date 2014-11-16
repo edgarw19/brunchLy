@@ -1,15 +1,25 @@
 <template name="userpage">
 <div class='main'>
     {{#if currentUser}}
-		<button id='brunch-signup'>
-	    {{#if signed_up}}
-	    	Cancle brunch :(
-	    {{else}}
-		    Sign Up for Brunch this Week!
+	    {{#if isAdmin}}
+		<button id='admin-special'>Match people!</button>
 	    {{/if}}
-		</button>
-		<a href='/survey'>Edit Survey!</a>
-		<div id = "canvas-back"><canvas id="radar" width="600" height="400"></canvas></div>
+
+	    {{#if signed_up}}
+    		<button id='brunch-signup' type="button" class="btn btn-danger btn-lg">
+		    Cancel brunch :(
+        		</button>
+	    {{else}}
+    		<button id='brunch-signup' type="button" class="btn btn-warning btn-lg" >
+	    	Sign up for brunch!
+  </button>
+
+	    {{/if}}
+        <button id='brunch-signup' type="button" class="btn btn-lg btn-warning" style="float: right">
+		<a href='/survey' style="text-decoration:none; color:white">Edit Survey!</a>
+        </button>
+		<canvas id="radar" width="600" height="400"></canvas>
+
     {{else}}
       <label class="control-label"> please log in! </label>
       <script>window.location.replace("./");</script>
