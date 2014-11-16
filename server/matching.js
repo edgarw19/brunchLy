@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+// var WEDNESDAY = 4;
+// var FRIDAY = 5
+
+// var day_delay = 86400000;
+// var min_delay = 60000;
+
+
+
+=======
 // var THURSDAY = 5;
 
 // var day_delay = 86400000;
@@ -110,11 +120,19 @@
 
 // buildMatches(Dummies.find().fetch());
 
+>>>>>>> 7434f520c3c758b19f72be174f1be62285cf75f8
 // Meteor.setInterval(match, day_delay)
 
 // function match() {
 // 	var curr_date = new Date();
+<<<<<<< HEAD
+// 	if (curr_date.getDay() = WEDNESDAY ) {
+// 		console.log('match success');
+// 	}
+// }
+=======
 // 	if (curr_date.getDay() == THURSDAY ) {
 // 		//run func here
 // 	}
 // }
+>>>>>>> 7434f520c3c758b19f72be174f1be62285cf75f8
