@@ -177,3 +177,4 @@ Template.homePage.events({
   }
 
 });  
+

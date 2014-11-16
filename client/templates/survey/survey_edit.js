@@ -58,7 +58,10 @@ Template.surveyEdit.events({
         grouped[Math.floor(i/3)] += $(rating).val();
     });
 
-    grouped = grouped.map(function (x) {return x / 3.0});
+    grouped = grouped.map(function (x) {
+      var avg = parseFloat((x/3.0).toPrecision(2));
+      return avg
+    });
     console.log('grouped', grouped);
 
     answers['grouped'] = grouped;

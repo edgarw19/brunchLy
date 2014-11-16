@@ -2,7 +2,7 @@
 
     {{#if currentUser}} 
     <script>
-        window.location.replace("./survey");
+        window.location.replace("./userpage");
     </script>
     {{/if}}
 
@@ -11,8 +11,7 @@
                  <span class="image featured">
                  <div id="logo-container">
                <img src="/HTML5front/images/logopng.png" alt="logo" /></div></span>
-               
-                 <p></p>
+               <button class="btn btn-default btn-lg" id="makeProfileButton">Make a profile</button>
              </section>
 </div>
 
@@ -43,24 +42,22 @@
                     <h1 class="intro-text text-center">
                         <strong>Engage</strong> with Princeton. <strong>Enter</strong> the community.
                     </h1>
-                    
+                    <hr>
                 </div>
                 <div class="col-lg-12 text-center">
-                    
-                    <hr>
                     <h1>What we do.</h1>
                     <h3><strong>Make the most of your brunches.</strong></h3>
-                        <h3>If you brunch once a week with two new people your four years at Princeton, you could meet almost 200 new people. In a place where we can get tied down to tight schedules and repetitive social groups, let brunch be a time to go out into the community and be inspired by Princeton students you may never have otherwise met. 
-                          Fill out a profile and get matched on <strong>your</strong> schedule.</h3>
+                        <p>If you brunch once a week with two new people your four years at Princeton, you could meet almost 200 new people. In a place where we can get tied down to tight schedules and repetitive social groups, let brunch be a time to go out into the community and be inspired by Princeton students you may never have otherwise met. 
+                          Fill out a profile and get matched on <strong>your</strong> schedule.</p>
                 </div>
                 <div class="col-lg-12 text-center">
                 <img class="img-responsive img-border img-full" src="HTML5front/images/bacon-2.jpg" alt="">
                     <hr>
                     <h1>How we match.</h1>
                   <h3><strong>Your Personality.</strong></h3>
-                        <h3>Let's skip the standard Princeton student categorization procedure. We're tired of being matched by major, eating club, gender, or other labels that we adopt while we're here on campus. Instead, let our personality matching algorithm match you with people who share similar personalities <strong>(or different)</strong>, whatever you prefer. Our personality matching algorithm is based on psychology research into the Big 5 categories of personality.</h3>
-                  <img src="http://www.bootcss.com/p/chart.js/assets/simple.png">
-                  <button class="btn btn-default btn-lg" id="makeProfileButton">Make a profile</button>
+                        <p>Let's skip the standard Princeton student categorization procedure. We're tired of being matched by major, eating club, gender, or other labels that we adopt while we're here on campus. Instead, let our personality matching algorithm match you with people who share similar personalities. Our personality matching algorithm is based on psychology research into the Big 5 categories of personality.</p>
+                  <div id = "chart-container"><img src="HTML5front/images/chart.png"></div>
+                  
                     <hr>
                 </div>
                 
@@ -69,16 +66,7 @@
 
     </div>
     <!-- /.container -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Brunchly 2014</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+<p>Copyright &copy; Brunchly 2014. Lambert, Sun, Pan, Wang, Wang, Wattendorf.</p>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
