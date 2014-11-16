@@ -22,3 +22,4 @@ Template.homePage.events({
   }
 
 });  
+

@@ -1,6 +1,9 @@
 <template name="userpage">
 <div class='main'>
     {{#if currentUser}}
+	    {{#if isAdmin}}
+		<button id='admin-special'>Match people!</button>
+	    {{/if}}
 		<button id='brunch-signup'>
 	    {{#if signed_up}}
 	    	Cancle brunch :(
