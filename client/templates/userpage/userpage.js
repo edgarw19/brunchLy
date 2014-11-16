@@ -1,12 +1,18 @@
 Template.userpage.events({
   'click #brunch-signup': function(e) {
     var profile = Profiles.findOne({userId: Meteor.userId()});
-  	Profiles.update({_id: profile._id}, {$set: {'signed_up': true}});
+  	Profiles.update({_id: profile._id}, {$set: {'signed_up': !profile.signed_up}});
   }
 });
 
+Template.userpage.signed_up = function() {
+    var profile = Profiles.findOne({userId: Meteor.userId()});
+    return profile.signed_up;
+};
+
 Template.userpage.rendered = function() {
     var profile = Profiles.findOne({userId: Meteor.userId()});
+    console.log('profile: ', profile);
 
 	var labels = ["Conscientiousness", "Openness to experience", "Neuroticism", "Agreeableness", "Extraversion"];
 	var data = profile.answers.grouped;
