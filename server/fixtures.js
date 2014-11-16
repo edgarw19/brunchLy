@@ -53,6 +53,11 @@ if (Dummies.find().count() === 0) {
     values:[1, 3, 3, 4, 5]
           , prevBrunches: []
   });
+        Dummies.insert({
+        email: "tim",
+    values:[1, 3, 3, 4, 5]
+          , prevBrunches: []
+  });
 }
 
 
