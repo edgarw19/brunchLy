@@ -150,7 +150,6 @@ var getEmail = function(user) {
 Template.homePage.events({
   'click #makeProfileButton': function(evt) {
 
-    // console.log('click'); 
 
     // console.log($('.dropdown-toggle')); 
     // $('.dropdown-toggle').trigger('click'); 
@@ -162,14 +161,6 @@ Template.homePage.events({
     }
    a(); 
    evt.preventDefault(); 
-
-
-   // console.log(Dummies.find().fetch()); 
-   var brunchers = Dummies.find().fetch(); 
-   sendEmails(brunchers, buildMatches(brunchers)); 
-
-
-
 
 
    return false;
