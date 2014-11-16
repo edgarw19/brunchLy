@@ -9,33 +9,36 @@ process.env.MAIL_URL = 'smtp://joannajw:brunchlysendgrid@smtp.sendgrid.net:587';
 console.log(Profiles.findOne()); 
 
 var sendEmails = function (origUserList, matchedUserList) { 
+
     
     var apologySubject = "[Brunchly] Sorry!";
-    var apologyBody = "sorry no one likes you";
+    var apologyBody = "sorry get brunch with potato";
 
     for (var i = 0; i < origUserList.length; i++) {
 
+        var userEmail = getEmail(origUserList[i]);
         var emailSubject = apologySubject; 
         var emailBody = apologyBody; 
 
-        if (matchedUserList[0] != null) {
-            // Profiles.findOne({userId: Meteor.userId()}
-            var userEmail = getEmail(origUserList[i]);
-            var matchedBrunchers = []; 
+        if (matchedUserList[i][0] != null) {
+            var matchedBrunchers = matchedUserList[i]; 
 
-            emailBody = "go eat food with these people!\n\n";
+            emailBody = "go eat food with these people!\n";
             emailSubject = "[Brunchly] You've been matched!";
             for (var j = 0; j < matchedBrunchers.length; j++) {
                 emailBody += getEmail(matchedBrunchers[j]) + "\n"
-            }
-
-            Email.send({
-                from: "brunch@brunchly.com",
-                to: userEmail,
-                subject: emailSubject,
-                text: emailBody
-            });
+            }   
         }
+        
+        Email.send({
+            from: "brunch@brunchly.com",
+            to: userEmail,
+            subject: emailSubject,
+            text: emailBody
+
+        });
+
+        console.log(userEmail, emailSubject, emailBody, "\n"); 
     }   
 }
 
