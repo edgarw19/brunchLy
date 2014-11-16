@@ -1,9 +1,9 @@
 Template.userpage.rendered = function() {
 	console.log('userpage!');
     var profile = Profiles.findOne({userId: Meteor.userId()});
-    
+
 	var labels = ["Conscientiousness", "Openness to experience", "Neuroticism", "Agreeableness", "Extraversion"];
-	var data = [2.8, 4.8, 4.0, 1.9, 9.6];
+	var data = profile.answers.grouped;
 	var data = {
 		labels: labels,
 		datasets: [{
