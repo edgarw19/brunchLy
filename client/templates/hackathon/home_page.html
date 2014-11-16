@@ -1,4 +1,12 @@
 <template name="homePage">
+
+    {{#if currentUser}} 
+    <script>
+        window.location.replace("./profile");
+    </script>
+    {{/if}}
+
+
   <div class="brand">
   <section id="banner">
                 <span class="image featured">
@@ -27,7 +35,7 @@
     </nav>
 
     <div class="container">
-
+        <!-- <input id='waycool' type="text"/> -->
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
@@ -42,15 +50,17 @@
                     <hr>
                     <h1>What we do.</h1>
                     <h3><strong>Make the most of your brunches.</strong></h3>
-                        <p>If you got one brunch a week with two new people each of the 12 weeks a semester Princeton is in class, you could meet almost 200 new people in the time you have at Princeton. In a place where we can get tied down to tight schedules and repetitive social groups, let brunch be a time to go out into the community and be inspired by Princeton students you may never have otherwise met. 
-                        Fill out a profile and get matched on <strong>your</strong> schedule.</p>
+                        <h3>If you brunch once a week with two new people your four years at Princeton, you could meet almost 200 new people. In a place where we can get tied down to tight schedules and repetitive social groups, let brunch be a time to go out into the community and be inspired by Princeton students you may never have otherwise met. 
+                          Fill out a profile and get matched on <strong>your</strong> schedule.</h3>
                 </div>
                 <div class="col-lg-12 text-center">
                 <img class="img-responsive img-border img-full" src="HTML5front/images/bacon-2.jpg" alt="">
                     <hr>
                     <h1>How we match.</h1>
-                        <p>Let's skip the standard Princeton student categorization procedure. We're tired of being matched by major, eating club, gender, or other labels that we adopt while we're here on campus. Instead, let our personality questions match you up with people who simply think like you <strong>(or not like you)</strong>, whatever you prefer. Our personality matching engine is based on psychology research into the Big 5 categories of personality: Openness to Experience, Extraversion, Agreeableness, Neuroticism, and Conscienciousness.</p>
-                  <a href="/profile" class="btn btn-default btn-lg">Make a profile</a>
+                  <h3><strong>Your Personality.</strong></h3>
+                        <h3>Let's skip the standard Princeton student categorization procedure. We're tired of being matched by major, eating club, gender, or other labels that we adopt while we're here on campus. Instead, let our personality matching algorithm match you with people who share similar personalities <strong>(or different)</strong>, whatever you prefer. Our personality matching algorithm is based on psychology research into the Big 5 categories of personality.</h3>
+                  <img src="http://www.bootcss.com/p/chart.js/assets/simple.png">
+                  <button class="btn btn-default btn-lg" id="makeProfileButton">Make a profile</button>
                     <hr>
                 </div>
                 
@@ -64,7 +74,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Brunchly 2014</p>
                 </div>
             </div>
         </div>
@@ -75,4 +85,14 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(function() {
+            console.log("hi"); 
+            $('#makeProfileButton').click(function() {
+                console.log("click");
+            });
+        }
+    </script>
+
   </template>
