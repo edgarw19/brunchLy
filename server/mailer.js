@@ -240,6 +240,9 @@ Meteor.methods({
       console.log('EMAILS', user.emails);
       match['email'] = user.emails[0].address;
       match['prevBrunches'] = [];
+      match['firstName'] = profiles[i].firstName;
+      match['lastName'] = profiles[i].lastName;
+      match['aboutMe'] = profiles[i].aboutMe;
       matches.push(match);
     }
     // console.log(Profiles.find({signed_up: true}).fetch());
