@@ -2,6 +2,18 @@
   <form class="main form">
 
     {{#if currentUser}}
+    <h3> Tell us a bit about yourself! </h3>
+<!--     {{#each questions}}
+    <div class="form-group">
+      <label class="control-label" for="rating">{{text}}</label>
+      <div class="controls">
+            <paper-slider data-desc="C1" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.C1 }}"></paper-slider>
+      </div>
+    </div>
+    {{/each}}
+
+    ugh why  -->
+
     <!-- Conscientiousness (C) -->
     <div class="form-group">
       <label class="control-label" for="rating">{{questions.C1}}</label>
@@ -102,6 +114,12 @@
       </div>
     </div>
 
+    <h3> What types of restaurants do you like? </h3>
+    {{#each restaurantTypes}}
+        <input type="checkbox" id="restaurant1"> <label class="control-label"> {{text}} </label><br>
+    {{/each}}
+
+    <br>
     <input type="submit" value="Submit" class="btn btn-primary"/>
 
     {{else}}

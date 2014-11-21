@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"peopl",
+				"peopleToBrunchWith"
+			],
+			[
+				"email",
+				"emailBody"
+			],
+			[
+				"user",
+				"userEmail"
+			],
+			[
+				"match",
+				"matchedUserList"
+			],
+			[
+				"matc",
+				"matchedEmails"
+			],
+			[
 				"gen",
 				"gen_value"
 			],
@@ -328,10 +348,6 @@
 				"accuracyBar"
 			],
 			[
-				"user",
-				"userAccuracy"
-			],
-			[
 				"text",
 				"text-align"
 			],
@@ -498,125 +514,32 @@
 			[
 				"bs",
 				"bfsV"
-			],
-			[
-				"B",
-				"BreadthFirstDirectedPaths"
-			],
-			[
-				"Point",
-				"Point2D"
-			],
-			[
-				"neares",
-				"nearestPoint"
-			],
-			[
-				"setpen",
-				"setPenRadius"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "client/templates/profile/profile.html",
+			"file": "client/templates/hackathon/home_page.js",
 			"settings":
 			{
-				"buffer_size": 402,
+				"buffer_size": 5190,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/templates/profile/profile_edit.html",
+			"file": "server/fixtures.js",
 			"settings":
 			{
-				"buffer_size": 4729,
+				"buffer_size": 1817,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "Searching 27237 files for \"profileEdit\"\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/server/app/lib/router.js:\n   18  \n   19  Router.route('/profile', {\n   20:   name: 'profileEdit',\n   21    // TODO put this back?\n   22    waitOn: function() { \n\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/5bd3930d4fc9667db044feaaa432394f976b19bf.css\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/5bd3930d4fc9667db044feaaa432394f976b19bf.css.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/main.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/templates/posts/post_item.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/templates/posts/post_submit.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/templates/posts/posts_list.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/templates/posts/template.post_item.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/templates/posts/template.post_page.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/templates/posts/template.post_submit.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/templates/posts/template.posts_list.js\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/lib/router.js:\n   18  \n   19  Router.route('/profile', {\n   20:   name: 'profileEdit',\n   21    // TODO put this back?\n   22    waitOn: function() { \n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.cordova/app/client/templates/profile/profile_edit.js:\n    1: (function(){Template.profileEdit.created = function() {\n    2    console.log('created!');	\n    3    // Session.set('postSubmitErrors', {});\n    4  };\n    5  \n    6: Template.profileEdit.helpers({\n    7    profile: function() {\n    8      var ret = Profiles.findOne({userId: Meteor.userId()});\n    .\n   47  // });\n   48  \n   49: Template.profileEdit.events({\n   50    'submit form': function(e) {\n   51      e.preventDefault();\n   ..\n   63      \n   64      console.log('answers:', answers);\n   65:     Meteor.call('profileEdit', answers, function(error, result) {\n   66        // display the error to the user and abort\n   67        if (error)\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.cordova/app/client/templates/profile/template.profile_edit.js:\n    1  (function(){\n    2: Template.__checkName(\"profileEdit\");\n    3: Template[\"profileEdit\"] = new Template(\"Template.profileEdit\", (function() {\n    4    var view = this;\n    5    return HTML.FORM({\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.cordova/app/lib/router.js:\n   18  \n   19  Router.route('/profile', {\n   20:   name: 'profileEdit',\n   21    // TODO put this back?\n   22    waitOn: function() { \n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.cordova/app/lib/collections/profile.js:\n    8  \n    9  Meteor.methods({\n   10:   profileEdit: function(answers) {\n   11      console.log(\"updating profile for user:\" + Meteor.user()._id);\n   12      check(answers, Object);\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/build/emulator/discussionMeteor.app/www/application/client/templates/profile/profile_edit.js:\n    1: (function(){Template.profileEdit.created = function() {\n    2    console.log('created!');	\n    3    // Session.set('postSubmitErrors', {});\n    4  };\n    5  \n    6: Template.profileEdit.helpers({\n    7    profile: function() {\n    8      var ret = Profiles.findOne({userId: Meteor.userId()});\n    .\n   47  // });\n   48  \n   49: Template.profileEdit.events({\n   50    'submit form': function(e) {\n   51      e.preventDefault();\n   ..\n   63      \n   64      console.log('answers:', answers);\n   65:     Meteor.call('profileEdit', answers, function(error, result) {\n   66        // display the error to the user and abort\n   67        if (error)\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/build/emulator/discussionMeteor.app/www/application/client/templates/profile/template.profile_edit.js:\n    1  (function(){\n    2: Template.__checkName(\"profileEdit\");\n    3: Template[\"profileEdit\"] = new Template(\"Template.profileEdit\", (function() {\n    4    var view = this;\n    5    return HTML.FORM({\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/build/emulator/discussionMeteor.app/www/application/client/templates/signup/template.signup.js:\n    1  (function(){\n    2: Template.__checkName(\"profileEdit\");\n    3: Template[\"profileEdit\"] = new Template(\"Template.profileEdit\", (function() {\n    4    var view = this;\n    5    return HTML.Raw('<!-- Main -->\\n    <section id=\"main\" class=\"container\">\\n        <header>\\n            <h2>Sign Up</h2>\\n            <!-- <p>A generic page for every non-generic situation.</p> -->\\n        </header>\\n        <div>\\n            <form id=\"login-form\" action=\"action\">\\n                <div>\\n                    username: <input type=\"text\" id=\"login-username\">\\n                    password: <input type=\"password\" id=\"login-password\">\\n                    email: <input type=\"email\" id=\"login-email\">\\n                    <br>\\n                    <input type=\"submit\" id=\"login-button\" value=\"Sign in\">\\n                </div>\\n            </form> \\n\\n\\n\\n\\n        </div>\\n    </section>');\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/build/emulator/discussionMeteor.app/www/application/lib/router.js:\n   18  \n   19  Router.route('/profile', {\n   20:   name: 'profileEdit',\n   21    // TODO put this back?\n   22    waitOn: function() { \n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/build/emulator/discussionMeteor.app/www/application/lib/collections/profile.js:\n    8  \n    9  Meteor.methods({\n   10:   profileEdit: function(answers) {\n   11      console.log(\"updating profile for user:\" + Meteor.user()._id);\n   12      check(answers, Object);\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/www/application/client/templates/profile/profile_edit.js:\n    1: (function(){Template.profileEdit.created = function() {\n    2    console.log('created!');	\n    3    // Session.set('postSubmitErrors', {});\n    4  };\n    5  \n    6: Template.profileEdit.helpers({\n    7    profile: function() {\n    8      var ret = Profiles.findOne({userId: Meteor.userId()});\n    .\n   47  // });\n   48  \n   49: Template.profileEdit.events({\n   50    'submit form': function(e) {\n   51      e.preventDefault();\n   ..\n   63      \n   64      console.log('answers:', answers);\n   65:     Meteor.call('profileEdit', answers, function(error, result) {\n   66        // display the error to the user and abort\n   67        if (error)\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/www/application/client/templates/profile/template.profile_edit.js:\n    1  (function(){\n    2: Template.__checkName(\"profileEdit\");\n    3: Template[\"profileEdit\"] = new Template(\"Template.profileEdit\", (function() {\n    4    var view = this;\n    5    return HTML.FORM({\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/www/application/client/templates/signup/template.signup.js:\n    1  (function(){\n    2: Template.__checkName(\"profileEdit\");\n    3: Template[\"profileEdit\"] = new Template(\"Template.profileEdit\", (function() {\n    4    var view = this;\n    5    return HTML.Raw('<!-- Main -->\\n    <section id=\"main\" class=\"container\">\\n        <header>\\n            <h2>Sign Up</h2>\\n            <!-- <p>A generic page for every non-generic situation.</p> -->\\n        </header>\\n        <div>\\n            <form id=\"login-form\" action=\"action\">\\n                <div>\\n                    username: <input type=\"text\" id=\"login-username\">\\n                    password: <input type=\"password\" id=\"login-password\">\\n                    email: <input type=\"email\" id=\"login-email\">\\n                    <br>\\n                    <input type=\"submit\" id=\"login-button\" value=\"Sign in\">\\n                </div>\\n            </form> \\n\\n\\n\\n\\n        </div>\\n    </section>');\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/www/application/lib/router.js:\n   18  \n   19  Router.route('/profile', {\n   20:   name: 'profileEdit',\n   21    // TODO put this back?\n   22    waitOn: function() { \n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/www/application/lib/collections/profile.js:\n    8  \n    9  Meteor.methods({\n   10:   profileEdit: function(answers) {\n   11      console.log(\"updating profile for user:\" + Meteor.user()._id);\n   12      check(answers, Object);\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/www/application/client/templates/profile/profile_edit.js:\n    1: (function(){Template.profileEdit.created = function() {\n    2    console.log('created!');	\n    3    // Session.set('postSubmitErrors', {});\n    4  };\n    5  \n    6: Template.profileEdit.helpers({\n    7    profile: function() {\n    8      var ret = Profiles.findOne({userId: Meteor.userId()});\n    .\n   47  // });\n   48  \n   49: Template.profileEdit.events({\n   50    'submit form': function(e) {\n   51      e.preventDefault();\n   ..\n   63      \n   64      console.log('answers:', answers);\n   65:     Meteor.call('profileEdit', answers, function(error, result) {\n   66        // display the error to the user and abort\n   67        if (error)\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/www/application/client/templates/profile/template.profile_edit.js:\n    1  (function(){\n    2: Template.__checkName(\"profileEdit\");\n    3: Template[\"profileEdit\"] = new Template(\"Template.profileEdit\", (function() {\n    4    var view = this;\n    5    return HTML.FORM({\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/www/application/client/templates/signup/template.signup.js:\n    1  (function(){\n    2: Template.__checkName(\"profileEdit\");\n    3: Template[\"profileEdit\"] = new Template(\"Template.profileEdit\", (function() {\n    4    var view = this;\n    5    return HTML.Raw('<!-- Main -->\\n    <section id=\"main\" class=\"container\">\\n        <header>\\n            <h2>Sign Up</h2>\\n            <!-- <p>A generic page for every non-generic situation.</p> -->\\n        </header>\\n        <div>\\n            <form id=\"login-form\" action=\"action\">\\n                <div>\\n                    username: <input type=\"text\" id=\"login-username\">\\n                    password: <input type=\"password\" id=\"login-password\">\\n                    email: <input type=\"email\" id=\"login-email\">\\n                    <br>\\n                    <input type=\"submit\" id=\"login-button\" value=\"Sign in\">\\n                </div>\\n            </form> \\n\\n\\n\\n\\n        </div>\\n    </section>');\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/www/application/lib/router.js:\n   18  \n   19  Router.route('/profile', {\n   20:   name: 'profileEdit',\n   21    // TODO put this back?\n   22    waitOn: function() { \n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/www/application/lib/collections/profile.js:\n    8  \n    9  Meteor.methods({\n   10:   profileEdit: function(answers) {\n   11      console.log(\"updating profile for user:\" + Meteor.user()._id);\n   12      check(answers, Object);\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/profile/profile_edit.html:\n    1: <template name=\"profileEdit\">\n    2    <form class=\"main form\">\n    3  \n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/profile/profile_edit.js:\n    1: Template.profileEdit.created = function() {\n    2    console.log('created!');	\n    3    // Session.set('postSubmitErrors', {});\n    4  };\n    5  \n    6: Template.profileEdit.helpers({\n    7    profile: function() {\n    8      var ret = Profiles.findOne({userId: Meteor.userId()});\n    .\n   47  // });\n   48  \n   49: Template.profileEdit.events({\n   50    'submit form': function(e) {\n   51      e.preventDefault();\n   ..\n   63      \n   64      console.log('answers:', answers);\n   65:     Meteor.call('profileEdit', answers, function(error, result) {\n   66        // display the error to the user and abort\n   67        if (error)\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/lib/router.js:\n   18  \n   19  Router.route('/profile', {\n   20:   name: 'profileEdit',\n   21    // TODO put this back?\n   22    waitOn: function() { \n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/lib/collections/profile.js:\n    8  \n    9  Meteor.methods({\n   10:   profileEdit: function(answers) {\n   11      console.log(\"updating profile for user:\" + Meteor.user()._id);\n   12      check(answers, Object);\n\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/server/packages/autopublish.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/server/packages/autopublish.js.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/server/packages/insecure.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/server/packages/insecure.js.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.browser/20ae2c8d51b2507244e598844414ecdec2615ce3.css\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.browser/20ae2c8d51b2507244e598844414ecdec2615ce3.css.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.browser/packages/autopublish.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.browser/packages/autopublish.js.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.browser/packages/insecure.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.browser/packages/insecure.js.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.cordova/648284256895adfb253133ffc6dea64462a46400.css\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.cordova/648284256895adfb253133ffc6dea64462a46400.css.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.cordova/packages/autopublish.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.cordova/packages/autopublish.js.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.cordova/packages/insecure.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.cordova/packages/insecure.js.map\n54 matches across 25 files\n\n\n'Searching 27237 files for \"profileEdit\"\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/server/app/lib/router.js:\n   18  \n   19  Router.route('/profile', {\n   20:   name: 'profileEdit',\n   21    // TODO put this back?\n   22    waitOn: function() { \n\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/5bd3930d4fc9667db044feaaa432394f976b19bf.css\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/5bd3930d4fc9667db044feaaa432394f976b19bf.css.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/main.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/templates/posts/post_item.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/templates/posts/post_submit.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/templates/posts/posts_list.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/templates/posts/template.post_item.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/templates/posts/template.post_page.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/templates/posts/template.post_submit.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/client/templates/posts/template.posts_list.js\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/lib/router.js:\n   18  \n   19  Router.route('/profile', {\n   20:   name: 'profileEdit',\n   21    // TODO put this back?\n   22    waitOn: function() { \n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.cordova/app/client/templates/profile/profile_edit.js:\n    1: (function(){Template.profileEdit.created = function() {\n    2    console.log('created!');	\n    3    // Session.set('postSubmitErrors', {});\n    4  };\n    5  \n    6: Template.profileEdit.helpers({\n    7    profile: function() {\n    8      var ret = Profiles.findOne({userId: Meteor.userId()});\n    .\n   47  // });\n   48  \n   49: Template.profileEdit.events({\n   50    'submit form': function(e) {\n   51      e.preventDefault();\n   ..\n   63      \n   64      console.log('answers:', answers);\n   65:     Meteor.call('profileEdit', answers, function(error, result) {\n   66        // display the error to the user and abort\n   67        if (error)\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.cordova/app/client/templates/profile/template.profile_edit.js:\n    1  (function(){\n    2: Template.__checkName(\"profileEdit\");\n    3: Template[\"profileEdit\"] = new Template(\"Template.profileEdit\", (function() {\n    4    var view = this;\n    5    return HTML.FORM({\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.cordova/app/lib/router.js:\n   18  \n   19  Router.route('/profile', {\n   20:   name: 'profileEdit',\n   21    // TODO put this back?\n   22    waitOn: function() { \n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.cordova/app/lib/collections/profile.js:\n    8  \n    9  Meteor.methods({\n   10:   profileEdit: function(answers) {\n   11      console.log(\"updating profile for user:\" + Meteor.user()._id);\n   12      check(answers, Object);\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/build/emulator/discussionMeteor.app/www/application/client/templates/profile/profile_edit.js:\n    1: (function(){Template.profileEdit.created = function() {\n    2    console.log('created!');	\n    3    // Session.set('postSubmitErrors', {});\n    4  };\n    5  \n    6: Template.profileEdit.helpers({\n    7    profile: function() {\n    8      var ret = Profiles.findOne({userId: Meteor.userId()});\n    .\n   47  // });\n   48  \n   49: Template.profileEdit.events({\n   50    'submit form': function(e) {\n   51      e.preventDefault();\n   ..\n   63      \n   64      console.log('answers:', answers);\n   65:     Meteor.call('profileEdit', answers, function(error, result) {\n   66        // display the error to the user and abort\n   67        if (error)\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/build/emulator/discussionMeteor.app/www/application/client/templates/profile/template.profile_edit.js:\n    1  (function(){\n    2: Template.__checkName(\"profileEdit\");\n    3: Template[\"profileEdit\"] = new Template(\"Template.profileEdit\", (function() {\n    4    var view = this;\n    5    return HTML.FORM({\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/build/emulator/discussionMeteor.app/www/application/client/templates/signup/template.signup.js:\n    1  (function(){\n    2: Template.__checkName(\"profileEdit\");\n    3: Template[\"profileEdit\"] = new Template(\"Template.profileEdit\", (function() {\n    4    var view = this;\n    5    return HTML.Raw('<!-- Main -->\\n    <section id=\"main\" class=\"container\">\\n        <header>\\n            <h2>Sign Up</h2>\\n            <!-- <p>A generic page for every non-generic situation.</p> -->\\n        </header>\\n        <div>\\n            <form id=\"login-form\" action=\"action\">\\n                <div>\\n                    username: <input type=\"text\" id=\"login-username\">\\n                    password: <input type=\"password\" id=\"login-password\">\\n                    email: <input type=\"email\" id=\"login-email\">\\n                    <br>\\n                    <input type=\"submit\" id=\"login-button\" value=\"Sign in\">\\n                </div>\\n            </form> \\n\\n\\n\\n\\n        </div>\\n    </section>');\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/build/emulator/discussionMeteor.app/www/application/lib/router.js:\n   18  \n   19  Router.route('/profile', {\n   20:   name: 'profileEdit',\n   21    // TODO put this back?\n   22    waitOn: function() { \n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/build/emulator/discussionMeteor.app/www/application/lib/collections/profile.js:\n    8  \n    9  Meteor.methods({\n   10:   profileEdit: function(answers) {\n   11      console.log(\"updating profile for user:\" + Meteor.user()._id);\n   12      check(answers, Object);\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/www/application/client/templates/profile/profile_edit.js:\n    1: (function(){Template.profileEdit.created = function() {\n    2    console.log('created!');	\n    3    // Session.set('postSubmitErrors', {});\n    4  };\n    5  \n    6: Template.profileEdit.helpers({\n    7    profile: function() {\n    8      var ret = Profiles.findOne({userId: Meteor.userId()});\n    .\n   47  // });\n   48  \n   49: Template.profileEdit.events({\n   50    'submit form': function(e) {\n   51      e.preventDefault();\n   ..\n   63      \n   64      console.log('answers:', answers);\n   65:     Meteor.call('profileEdit', answers, function(error, result) {\n   66        // display the error to the user and abort\n   67        if (error)\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/www/application/client/templates/profile/template.profile_edit.js:\n    1  (function(){\n    2: Template.__checkName(\"profileEdit\");\n    3: Template[\"profileEdit\"] = new Template(\"Template.profileEdit\", (function() {\n    4    var view = this;\n    5    return HTML.FORM({\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/www/application/client/templates/signup/template.signup.js:\n    1  (function(){\n    2: Template.__checkName(\"profileEdit\");\n    3: Template[\"profileEdit\"] = new Template(\"Template.profileEdit\", (function() {\n    4    var view = this;\n    5    return HTML.Raw('<!-- Main -->\\n    <section id=\"main\" class=\"container\">\\n        <header>\\n            <h2>Sign Up</h2>\\n            <!-- <p>A generic page for every non-generic situation.</p> -->\\n        </header>\\n        <div>\\n            <form id=\"login-form\" action=\"action\">\\n                <div>\\n                    username: <input type=\"text\" id=\"login-username\">\\n                    password: <input type=\"password\" id=\"login-password\">\\n                    email: <input type=\"email\" id=\"login-email\">\\n                    <br>\\n                    <input type=\"submit\" id=\"login-button\" value=\"Sign in\">\\n                </div>\\n            </form> \\n\\n\\n\\n\\n        </div>\\n    </section>');\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/www/application/lib/router.js:\n   18  \n   19  Router.route('/profile', {\n   20:   name: 'profileEdit',\n   21    // TODO put this back?\n   22    waitOn: function() { \n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/platforms/ios/www/application/lib/collections/profile.js:\n    8  \n    9  Meteor.methods({\n   10:   profileEdit: function(answers) {\n   11      console.log(\"updating profile for user:\" + Meteor.user()._id);\n   12      check(answers, Object);\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/www/application/client/templates/profile/profile_edit.js:\n    1: (function(){Template.profileEdit.created = function() {\n    2    console.log('created!');	\n    3    // Session.set('postSubmitErrors', {});\n    4  };\n    5  \n    6: Template.profileEdit.helpers({\n    7    profile: function() {\n    8      var ret = Profiles.findOne({userId: Meteor.userId()});\n    .\n   47  // });\n   48  \n   49: Template.profileEdit.events({\n   50    'submit form': function(e) {\n   51      e.preventDefault();\n   ..\n   63      \n   64      console.log('answers:', answers);\n   65:     Meteor.call('profileEdit', answers, function(error, result) {\n   66        // display the error to the user and abort\n   67        if (error)\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/www/application/client/templates/profile/template.profile_edit.js:\n    1  (function(){\n    2: Template.__checkName(\"profileEdit\");\n    3: Template[\"profileEdit\"] = new Template(\"Template.profileEdit\", (function() {\n    4    var view = this;\n    5    return HTML.FORM({\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/www/application/client/templates/signup/template.signup.js:\n    1  (function(){\n    2: Template.__checkName(\"profileEdit\");\n    3: Template[\"profileEdit\"] = new Template(\"Template.profileEdit\", (function() {\n    4    var view = this;\n    5    return HTML.Raw('<!-- Main -->\\n    <section id=\"main\" class=\"container\">\\n        <header>\\n            <h2>Sign Up</h2>\\n            <!-- <p>A generic page for every non-generic situation.</p> -->\\n        </header>\\n        <div>\\n            <form id=\"login-form\" action=\"action\">\\n                <div>\\n                    username: <input type=\"text\" id=\"login-username\">\\n                    password: <input type=\"password\" id=\"login-password\">\\n                    email: <input type=\"email\" id=\"login-email\">\\n                    <br>\\n                    <input type=\"submit\" id=\"login-button\" value=\"Sign in\">\\n                </div>\\n            </form> \\n\\n\\n\\n\\n        </div>\\n    </section>');\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/www/application/lib/router.js:\n   18  \n   19  Router.route('/profile', {\n   20:   name: 'profileEdit',\n   21    // TODO put this back?\n   22    waitOn: function() { \n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/cordova-build/www/application/lib/collections/profile.js:\n    8  \n    9  Meteor.methods({\n   10:   profileEdit: function(answers) {\n   11      console.log(\"updating profile for user:\" + Meteor.user()._id);\n   12      check(answers, Object);\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/profile/profile_edit.html:\n    1: <template name=\"profileEdit\">\n    2    <form class=\"main form\">\n    3  \n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/profile/profile_edit.js:\n    1: Template.profileEdit.created = function() {\n    2    console.log('created!');	\n    3    // Session.set('postSubmitErrors', {});\n    4  };\n    5  \n    6: Template.profileEdit.helpers({\n    7    profile: function() {\n    8      var ret = Profiles.findOne({userId: Meteor.userId()});\n    .\n   47  // });\n   48  \n   49: Template.profileEdit.events({\n   50    'submit form': function(e) {\n   51      e.preventDefault();\n   ..\n   63      \n   64      console.log('answers:', answers);\n   65:     Meteor.call('profileEdit', answers, function(error, result) {\n   66        // display the error to the user and abort\n   67        if (error)\n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/lib/router.js:\n   18  \n   19  Router.route('/profile', {\n   20:   name: 'profileEdit',\n   21    // TODO put this back?\n   22    waitOn: function() { \n\n/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/lib/collections/profile.js:\n    8  \n    9  Meteor.methods({\n   10:   profileEdit: function(answers) {\n   11      console.log(\"updating profile for user:\" + Meteor.user()._id);\n   12      check(answers, Object);\n\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/server/packages/autopublish.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/server/packages/autopublish.js.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/server/packages/insecure.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/server/packages/insecure.js.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.browser/20ae2c8d51b2507244e598844414ecdec2615ce3.css\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.browser/20ae2c8d51b2507244e598844414ecdec2615ce3.css.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.browser/packages/autopublish.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.browser/packages/autopublish.js.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.browser/packages/insecure.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.browser/packages/insecure.js.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.cordova/648284256895adfb253133ffc6dea64462a46400.css\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.cordova/648284256895adfb253133ffc6dea64462a46400.css.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.cordova/packages/autopublish.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.cordova/packages/autopublish.js.map\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.cordova/packages/insecure.js\nUnable to open /Users/Joanna/HackPrinceton_Fall2014/simple-todos/.meteor/local/build/programs/web.cordova/packages/insecure.js.map\n54 matches across 25 files\n",
+			"file": "server/mailer.js",
 			"settings":
 			{
-				"buffer_size": 31775,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": ".meteor/local/build/programs/web.browser/app/lib/router.js",
-			"settings":
-			{
-				"buffer_size": 721,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/templates/profile/profile_edit.js",
-			"settings":
-			{
-				"buffer_size": 2990,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lib/collections/profile.js",
-			"settings":
-			{
-				"buffer_size": 813,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/Joanna/HackPrinceton_Fall2014/simple-todos/simple-todos.js",
-			"settings":
-			{
-				"buffer_size": 3688,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/Joanna/HackPrinceton_Fall2014/simple-todos/simple-todos.html",
-			"settings":
-			{
-				"buffer_size": 1198,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "\nif (Meteor.isClient) {\n  Template.login.events({\n\n    'submit #login-form' : function(e, t){\n\n      console.log(\"### submit\")\n      e.preventDefault();\n      // retrieve the input field values\n      var username = t.find('#login-username').value, \n          email = t.find('#login-email').value,\n          password = t.find('#login-password').value;\n\n          // console.log(username, email, password); \n      // trim email\n      email = email.replace(/^\\s*|\\s*$/g, \"\");\n\n      //   // If validation passes, supply the appropriate fields to the\n      //   // Meteor.loginWithPassword() function.\n      //   Meteor.loginWithPassword(email, password, function(err){\n      //   if (err) {}\n      //     // The user might not have been found, or their passwword\n      //     // could be incorrect. Inform the user that their\n      //     // login attempt has failed. \n      //   else {}\n      //     // The user has been logged in.\n      // });\n         return false; \n      }\n  });\n}",
-			"file": "server/signup.js",
-			"file_size": 982,
-			"file_write_time": 1416095846000000,
-			"settings":
-			{
-				"buffer_size": 982,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/templates/signup/signup.html",
-			"settings":
-			{
-				"buffer_size": 1280,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "hack.sublime-project",
-			"settings":
-			{
-				"buffer_size": 97,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "hack.sublime-workspace",
-			"settings":
-			{
-				"buffer_size": 63626,
+				"buffer_size": 4672,
 				"line_ending": "Unix"
 			}
 		}
@@ -645,27 +568,45 @@
 	},
 	"file_history":
 	[
+		"/Users/Joanna/HackPrinceton_Fall2014/simple-todos/simple-todos.js",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/public/HTML5front/elements.html",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/profile/profile_edit.js",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/lib/router.js",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/survey/survey_edit.js",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/includes/header.html",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/server/matching.js",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/server/mailer.js",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/hackathon/home_page.js",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/hackathon/home_page.html",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/profile/profile_edit.html",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/signup/signup.html",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/server/signup.js",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/lib/collections/profile.js",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/helpers/config.js",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/signup/signup.js",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/hackathon/user_page.js",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/hack.sublime-project",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/public/HTML5front/generic.html",
+		"/Users/Joanna/HackPrinceton_Fall2014/simple-todos/simple-todos.html",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/web.browser/app/lib/router.js",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/profile/profile.html",
+		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/hack.sublime-workspace",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/server/app/lib/router.js",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/README",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/main.html",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/main.js",
-		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/server/signup.js",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/server/fixtures.js",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/server/publications.js",
-		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/hackathon/home_page.html",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/public/HTML5front/signup.html",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/public/HTML5front/index.html",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/server/Mailer.js",
 		"/Users/Joanna/HackPrinceton_Fall2014/simple-todos/simple-todos.css",
-		"/Users/Joanna/HackPrinceton_Fall2014/simple-todos/simple-todos.html",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/.meteor/local/build/programs/server/packages/templating.js",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/HTML5front/index.html",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/HTML5front/generic.html",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/HTML5front/elements.html",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/HTML5front/contact.html",
-		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/includes/header.html",
 		"/Users/Joanna/HackPrinceton_Fall2014/discussionMeteor/client/templates/hackathon/user_page.html",
-		"/Users/Joanna/HackPrinceton_Fall2014/simple-todos/simple-todos.js",
 		"/Users/Joanna/Dropbox/Fall2014/COS326/Assignment5/moogle/dict.ml",
 		"/Users/Joanna/Documents/InternshipSearch_Summer2015/LinkedIn/LinkedIn_technicalInterview2",
 		"/Users/Joanna/Documents/InternshipSearch_Summer2015/Microsoft/BST.java",
@@ -754,25 +695,7 @@
 		"/Users/Joanna/Dropbox/HackPrinceton/gifbattle/app/views/static/choose.html.erb",
 		"/Users/Joanna/Dropbox/HackPrinceton/Layout/styles.css",
 		"/Users/Joanna/Dropbox/HackPrinceton/Layout/index.html",
-		"/Users/Joanna/Dropbox/HackPrinceton/GIFBattle_nodeJS/script.js",
-		"/Users/Joanna/Dropbox/HackPrinceton/sendgrid-nodejs-example/package.json",
-		"/Users/Joanna/Dropbox/HackPrinceton/SendGrid/sendgrid-nodejs-master/package.json",
-		"/Users/Joanna/Dropbox/HackPrinceton/SendGrid/test.js",
-		"/Volumes/joannajw/COS217~1/assignment3/readme",
-		"/Users/Joanna/Dropbox/COS217/Assignment3/symtablelist.c",
-		"/Users/Joanna/Dropbox/Other/node-drawing-game/app.js",
-		"/Users/Joanna/Dropbox/Other/index.html",
-		"/Users/Joanna/Dropbox/Other/style.css",
-		"/Users/Joanna/Dropbox/Other/script.js",
-		"/Users/Joanna/Dropbox/Other/Meteor/TwitterListApp/client/TwitterListApp.js",
-		"/Users/Joanna/Dropbox/Other/Xcode/test1.c",
-		"/Users/Joanna/Dropbox/Other/Xcode/math_functions.h",
-		"/Users/Joanna/Dropbox/Other/Xcode/math_functions.c",
-		"/Users/Joanna/Dropbox/COS226/Assignment8/readme.txt",
-		"/Users/Joanna/Dropbox/COS226/Assignment8/BruteAutocomplete.java",
-		"/Users/Joanna/Dropbox/COS226/Assignment8/Autocomplete.java",
-		"/Users/Joanna/Dropbox/COS226/Assignment8/ModifiedTST.java",
-		"/Users/Joanna/Dropbox/COS226/Assignment7/SeamCarver.java"
+		"/Users/Joanna/Dropbox/HackPrinceton/GIFBattle_nodeJS/script.js"
 	],
 	"find":
 	{
@@ -791,6 +714,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Email",
+			"dropdown-",
 			"profileEdit",
 			"foreach",
 			"interval",
@@ -893,548 +818,75 @@
 	"groups":
 	[
 		{
-			"selected": 11,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "client/templates/profile/profile.html",
+					"file": "client/templates/hackathon/home_page.js",
 					"settings":
 					{
-						"buffer_size": 402,
+						"buffer_size": 5190,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								402,
-								402
+								5063,
+								5103
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2295.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "client/templates/profile/profile_edit.html",
+					"file": "server/fixtures.js",
 					"settings":
 					{
-						"buffer_size": 4729,
+						"buffer_size": 1817,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								16,
-								27
+								690,
+								690
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 101.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "server/mailer.js",
 					"settings":
 					{
-						"buffer_size": 31775,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										208,
-										219
-									],
-									[
-										1993,
-										2004
-									],
-									[
-										2240,
-										2251
-									],
-									[
-										2393,
-										2404
-									],
-									[
-										2556,
-										2567
-									],
-									[
-										2733,
-										2744
-									],
-									[
-										3062,
-										3073
-									],
-									[
-										3094,
-										3105
-									],
-									[
-										3133,
-										3144
-									],
-									[
-										3388,
-										3399
-									],
-									[
-										3634,
-										3645
-									],
-									[
-										3995,
-										4006
-									],
-									[
-										4148,
-										4159
-									],
-									[
-										4311,
-										4322
-									],
-									[
-										4488,
-										4499
-									],
-									[
-										4866,
-										4877
-									],
-									[
-										4898,
-										4909
-									],
-									[
-										4937,
-										4948
-									],
-									[
-										5261,
-										5272
-									],
-									[
-										5293,
-										5304
-									],
-									[
-										5332,
-										5343
-									],
-									[
-										6329,
-										6340
-									],
-									[
-										6624,
-										6635
-									],
-									[
-										6949,
-										6960
-									],
-									[
-										7102,
-										7113
-									],
-									[
-										7265,
-										7276
-									],
-									[
-										7442,
-										7453
-									],
-									[
-										7784,
-										7795
-									],
-									[
-										7816,
-										7827
-									],
-									[
-										7855,
-										7866
-									],
-									[
-										8143,
-										8154
-									],
-									[
-										8175,
-										8186
-									],
-									[
-										8214,
-										8225
-									],
-									[
-										9175,
-										9186
-									],
-									[
-										9434,
-										9445
-									],
-									[
-										9745,
-										9756
-									],
-									[
-										9898,
-										9909
-									],
-									[
-										10061,
-										10072
-									],
-									[
-										10238,
-										10249
-									],
-									[
-										10566,
-										10577
-									],
-									[
-										10598,
-										10609
-									],
-									[
-										10637,
-										10648
-									],
-									[
-										10911,
-										10922
-									],
-									[
-										10943,
-										10954
-									],
-									[
-										10982,
-										10993
-									],
-									[
-										11929,
-										11940
-									],
-									[
-										12174,
-										12185
-									],
-									[
-										12438,
-										12449
-									],
-									[
-										12607,
-										12618
-									],
-									[
-										12760,
-										12771
-									],
-									[
-										12923,
-										12934
-									],
-									[
-										13100,
-										13111
-									],
-									[
-										13357,
-										13368
-									],
-									[
-										13558,
-										13569
-									],
-									[
-										16097,
-										16108
-									],
-									[
-										17882,
-										17893
-									],
-									[
-										18129,
-										18140
-									],
-									[
-										18282,
-										18293
-									],
-									[
-										18445,
-										18456
-									],
-									[
-										18622,
-										18633
-									],
-									[
-										18951,
-										18962
-									],
-									[
-										18983,
-										18994
-									],
-									[
-										19022,
-										19033
-									],
-									[
-										19277,
-										19288
-									],
-									[
-										19523,
-										19534
-									],
-									[
-										19884,
-										19895
-									],
-									[
-										20037,
-										20048
-									],
-									[
-										20200,
-										20211
-									],
-									[
-										20377,
-										20388
-									],
-									[
-										20755,
-										20766
-									],
-									[
-										20787,
-										20798
-									],
-									[
-										20826,
-										20837
-									],
-									[
-										21150,
-										21161
-									],
-									[
-										21182,
-										21193
-									],
-									[
-										21221,
-										21232
-									],
-									[
-										22218,
-										22229
-									],
-									[
-										22513,
-										22524
-									],
-									[
-										22838,
-										22849
-									],
-									[
-										22991,
-										23002
-									],
-									[
-										23154,
-										23165
-									],
-									[
-										23331,
-										23342
-									],
-									[
-										23673,
-										23684
-									],
-									[
-										23705,
-										23716
-									],
-									[
-										23744,
-										23755
-									],
-									[
-										24032,
-										24043
-									],
-									[
-										24064,
-										24075
-									],
-									[
-										24103,
-										24114
-									],
-									[
-										25064,
-										25075
-									],
-									[
-										25323,
-										25334
-									],
-									[
-										25634,
-										25645
-									],
-									[
-										25787,
-										25798
-									],
-									[
-										25950,
-										25961
-									],
-									[
-										26127,
-										26138
-									],
-									[
-										26455,
-										26466
-									],
-									[
-										26487,
-										26498
-									],
-									[
-										26526,
-										26537
-									],
-									[
-										26800,
-										26811
-									],
-									[
-										26832,
-										26843
-									],
-									[
-										26871,
-										26882
-									],
-									[
-										27818,
-										27829
-									],
-									[
-										28063,
-										28074
-									],
-									[
-										28327,
-										28338
-									],
-									[
-										28496,
-										28507
-									],
-									[
-										28649,
-										28660
-									],
-									[
-										28812,
-										28823
-									],
-									[
-										28989,
-										29000
-									],
-									[
-										29246,
-										29257
-									],
-									[
-										29447,
-										29458
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								17891,
-								17891
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 2,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 6090.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": ".meteor/local/build/programs/web.browser/app/lib/router.js",
-					"settings":
-					{
-						"buffer_size": 721,
+						"buffer_size": 4672,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								254,
-								254
+								4428,
+								4428
 							]
 						],
 						"settings":
@@ -1442,217 +894,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "client/templates/profile/profile_edit.js",
-					"settings":
-					{
-						"buffer_size": 2990,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1975,
-								1975
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "lib/collections/profile.js",
-					"settings":
-					{
-						"buffer_size": 813,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								754,
-								754
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/Users/Joanna/HackPrinceton_Fall2014/simple-todos/simple-todos.js",
-					"settings":
-					{
-						"buffer_size": 3688,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								383,
-								390
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/Users/Joanna/HackPrinceton_Fall2014/simple-todos/simple-todos.html",
-					"settings":
-					{
-						"buffer_size": 1198,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								474,
-								467
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "server/signup.js",
-					"settings":
-					{
-						"buffer_size": 982,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "client/templates/signup/signup.html",
-					"settings":
-					{
-						"buffer_size": 1280,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								196,
-								196
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "hack.sublime-project",
-					"settings":
-					{
-						"buffer_size": 97,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								97,
-								97
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "hack.sublime-workspace",
-					"settings":
-					{
-						"buffer_size": 63626,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1802.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1706,6 +948,22 @@
 		"selected_items":
 		[
 			[
+				"home_page",
+				"discussionMeteor/client/templates/hackathon/home_page.html"
+			],
+			[
+				"profileedit",
+				"discussionMeteor/client/templates/profile/profile_edit.js"
+			],
+			[
+				"profi",
+				"discussionMeteor/lib/collections/profile.js"
+			],
+			[
+				"config",
+				"discussionMeteor/client/helpers/config.js"
+			],
+			[
 				"templating",
 				"discussionMeteor/.meteor/local/build/programs/server/packages/templating.js"
 			],
@@ -1744,6 +1002,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 215.0,
+	"side_bar_width": 222.0,
 	"status_bar_visible": true
 }

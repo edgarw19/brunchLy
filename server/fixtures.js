@@ -15,6 +15,38 @@ if (Posts.find().count() === 0) {
   });
 }
 
+if (Restaurants.find().count === 0) {
+  Restaurants.insert({
+    name: 'Thai Village',
+    type: 'Thai'
+  });
+
+  Restaurants.insert({
+    name: 'Naked Pizza',
+    type: 'Italian'
+  });
+
+  Restaurants.insert({
+    name: 'EPS Corner',
+    type: 'Chinese'
+  });
+
+  Restaurants.insert({
+    name: 'Cheeburger Cheeburger',
+    type: 'American'
+  });
+
+  Restaurants.insert({
+    name: 'Mehek',
+    type: 'Indian'
+  });
+
+  Restaurants.insert({
+    name: 'Mamoun\'s',
+    type: 'Middle Eastern'
+  });
+}
+
 if (Dummies.find().count() === 0) {
   Dummies.insert({
     email: "joannajw@princeton.edu",

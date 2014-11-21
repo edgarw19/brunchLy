@@ -16,7 +16,8 @@ Template.surveyEdit.helpers({
     // console.log(ret); 
     return ret;
   },
-  questions: {'C1': "I have a clear set of goals that I work towards in an orderly fashion", 
+  
+   questions: {'C1': "I have a clear set of goals that I work towards in an orderly fashion", 
               'C2': "I am comfortable making quick decisions under pressure.",
               'C3': "I make lists (in my head or in writing) to break down tasks into.", 
 
@@ -34,7 +35,34 @@ Template.surveyEdit.helpers({
 
               'E1': "I am comfortable smiling and getting to know strangers.", 
               'E2': "I am assertive in my beliefs and feel comfortable sharing them with others.", 
-              'E3': "When I’m around other people I am naturally talkative and inquisitive." } 
+              'E3': "When I’m around other people I am naturally talkative and inquisitive." },
+
+  // questions: [{tag: 'C1', text: 'I have a clear set of goals that I work towards in an orderly fashion'}, 
+  //             {tag: 'C2', text: "I am comfortable making quick decisions under pressure."},
+  //             {tag: 'C3', text: "I make lists (in my head or in writing) to break down tasks into."}, 
+
+  //             {tag: 'O1', text: "I enjoy intellectual pursuits for their own sake and are likely to derive satisfaction from theoretical discussion."}, 
+  //             {tag: 'O2', text: "I like trying new, foreign foods."}, 
+  //             {tag: 'O3', text: "My friends are mostly people with value systems similar to my own."}, 
+
+  //             {tag: 'N1', text: "I tend to remain calm under pressure."}, 
+  //             {tag: 'N2', text: "I find that my mood can change strongly and rapidly throughout a day."}, 
+  //             {tag: 'N3', text: "I often feel jealous of the accomplishments of my friends and peers."}, 
+
+  //             {tag: 'A1', text: "In group projects I am comfortable trusting others to stick to deadlines."}, 
+  //             {tag: 'A2', text: "I am empathetic: when one of my friends feels something, I usually do too."}, 
+  //             {tag: 'A3', text: "I have done things that I didn’t really want to simply because a friend asked me to."}, 
+
+  //             {tag: 'E1', text: "I am comfortable smiling and getting to know strangers."}, 
+  //             {tag: 'E2', text: "I am assertive in my beliefs and feel comfortable sharing them with others."}, 
+  //             {tag: 'E3', text: "When I’m around other people I am naturally talkative and inquisitive."}], 
+
+restaurantTypes: [{text: 'Thai'}, 
+                  {text: 'American'}, 
+                  {text: 'Middle Eastern'}, 
+                  {text: 'Indian'}, 
+                  {text: 'Italian'}, 
+                  {text: 'Chinese'}]
 });
 
 // Template.postSubmit.helpers({
@@ -68,7 +96,7 @@ Template.surveyEdit.events({
 
     ratings.each(function (el, rating) {
       answers[$(rating).attr('data-desc')] = $(rating).val();
-    });
+    });2
 
     // var errors = validatePost(post);
     // if (errors.title || errors.url)
