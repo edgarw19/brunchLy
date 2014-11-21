@@ -13,7 +13,7 @@ Template.surveyEdit.helpers({
                           'A1': 5, 'A2': 5, 'A3' : 5,
                           'E1': 5, 'E2': 5, 'E3' : 5}};
     }
-    console.log(ret); 
+    // console.log(ret); 
     return ret;
   },
   questions: {'C1': "If I want to achieve my dream job, I know exactly how I'm going to do it.", 
