@@ -5,20 +5,32 @@
 		<button id='admin-special'>Match people!</button>
 	    {{/if}}
 
+        <button type="button" class="btn btn-lg btn-warning" style="float: right">
+        <a href='/survey' style="text-decoration:none; color:white">Edit Profile</a>
+        </button>
+
 	    {{#if signed_up}}
-    		<button id='brunch-signup' type="button" class="btn btn-danger btn-lg">
-		    Cancel brunch :(
-        		</button>
+            
+    		<button id='brunch-signup' type="button" class="btn btn-danger btn-lg" style="float: left">
+		    Cancel brunch for this week
+        	</button>
+
+            <br><br><br><br>
+
+            <center><h3>You're signed up for brunch this week!</h3>
+            <p>We'll send you an email when you've been matched with fellow brunchers.</p></center>
+            <hr>
 	    {{else}}
     		<button id='brunch-signup' type="button" class="btn btn-warning btn-lg" >
-	    	Sign up for brunch!
+	    	Sign up for brunch this week!
   </button>
 
 	    {{/if}}
-        <button type="button" class="btn btn-lg btn-warning" style="float: right">
-		<a href='/survey' style="text-decoration:none; color:white">Edit Survey!</a>
-        </button>
-		<canvas id="radar" width="600" height="400"></canvas>
+        
+
+        <center><br><h3>Your personality profile</h3><br></center>
+
+		<canvas id="radar" width="500" height="400"></canvas>
 
     {{else}}
       <label class="control-label"> please log in! </label>
