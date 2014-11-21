@@ -63,13 +63,13 @@ var shuffle = function(o){
 
 
 var getAboutMe = function(user){
-  return user.aboutme;
+  return user.aboutMe;
 }
 
 var getName = function(user){
   var name = "";
   name += user.firstName + " " + user.lastName;
-  return string;
+  return name;
 }
 
 var grabRestaurantDescription = function(restaurant) {
@@ -77,6 +77,7 @@ var grabRestaurantDescription = function(restaurant) {
   restDescription += "Type: " + restaurant.type + "\n";
   restDescription += "Address: " + restaurant.address + "\n";
   restDescription += "Phone: " + restaurant.phone + "\n\n\n";
+  return restDescription; 
 }
 
 
