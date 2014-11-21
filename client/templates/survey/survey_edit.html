@@ -2,7 +2,33 @@
   <form class="main form">
 
     {{#if currentUser}}
+    <div class="container">
+    <!-- <form class =" form-inline well span12" >   -->
     <h3> Tell us a bit about yourself! </h3>
+    
+    <div class="row"> 
+        <div class="col-sm-11">
+
+        <label class="control-label">First Name</label>
+        <br>
+        <input type="text" class="form-control" id="firstName" placeholder="{{profile.firstName}}">
+        <br>
+
+        <label class="control-label">Last Name</label>
+        <br>
+        <input type="text" class="form-control" id="lastName" placeholder="{{profile.lastName}}">
+        <br>
+
+        <label class="control-label">Brief introduction</label>
+        <br>
+        <textarea class="form-control col-sm-12" id="aboutMe" style="height:100px" placeholder="{{profile.aboutMe}}"></textarea>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- </form> -->
+    <!-- <input type="text" name="firstname"> -->
 <!--     {{#each questions}}
     <div class="form-group">
       <label class="control-label" for="rating">{{text}}</label>
@@ -14,6 +40,8 @@
 
     ugh why  -->
 
+    <h3> Just a few questions... </h3><br>
+
     <!-- Conscientiousness (C) -->
     <div class="form-group">
       <label class="control-label" for="rating">{{questions.C1}}</label>
@@ -21,18 +49,21 @@
     		<paper-slider data-desc="C1" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.C1 }}"></paper-slider>
       </div>
     </div>
+    <br>
     <div class="form-group">
       <label class="control-label" for="rating">{{questions.C2}}</label>
       <div class="controls">
         <paper-slider data-desc="C2" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.C2 }}"></paper-slider>
       </div>
     </div>
+    <br>
     <div class="form-group">
       <label class="control-label" for="rating">{{questions.C3}}</label>
       <div class="controls">
         <paper-slider data-desc="C3" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.C3 }}"></paper-slider>
       </div>
     </div>
+    <br>
 
     <!-- Openness to experience (O) -->
     <div class="form-group">
@@ -41,18 +72,21 @@
         <paper-slider data-desc="O1" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.O1 }}"></paper-slider>
       </div>
     </div>
+    <br>
     <div class="form-group">
       <label class="control-label" for="rating">{{questions.O2}}</label>
       <div class="controls">
         <paper-slider data-desc="O2" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.O2 }}"></paper-slider>
       </div>
     </div>
+    <br>
     <div class="form-group">
       <label class="control-label" for="rating">{{questions.O3}}</label>
       <div class="controls">
         <paper-slider data-desc="O3" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.O3 }}"></paper-slider>
       </div>
     </div>
+    <br>
 
     <!-- Neuroticism (N) -->
     <div class="form-group">
@@ -61,18 +95,21 @@
         <paper-slider data-desc="N1" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.N1 }}"></paper-slider>
       </div>
     </div>
+    <br>
     <div class="form-group">
       <label class="control-label" for="rating">{{questions.N2}}</label>
       <div class="controls">
         <paper-slider data-desc="N2" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.N2 }}"></paper-slider>
       </div>
     </div>
+    <br>
     <div class="form-group">
       <label class="control-label" for="rating">{{questions.N3}}</label>
       <div class="controls">
         <paper-slider data-desc="N3" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.N3 }}"></paper-slider>
       </div>
     </div>
+    <br>
 
     <!-- Agreeableness (A) -->
     <div class="form-group">
@@ -81,18 +118,21 @@
         <paper-slider data-desc="A1" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.A1 }}"></paper-slider>
       </div>
     </div>
+    <br>
     <div class="form-group">
       <label class="control-label" for="rating">{{questions.A2}}</label>
       <div class="controls">
         <paper-slider data-desc="A2" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.A2 }}"></paper-slider>
       </div>
     </div>
+    <br>
     <div class="form-group">
       <label class="control-label" for="rating">{{questions.A3}}</label>
       <div class="controls">
         <paper-slider data-desc="A3" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.A3 }}"></paper-slider>
       </div>
     </div>
+    <br>
 
     <!-- Extraversion (E) -->
     <div class="form-group">
@@ -101,18 +141,21 @@
         <paper-slider data-desc="E1" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.E1 }}"></paper-slider>
       </div>
     </div>
+    <br>
     <div class="form-group">
       <label class="control-label" for="rating">{{questions.E2}}</label>
       <div class="controls">
         <paper-slider data-desc="E2" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.E2 }}"></paper-slider>
       </div>
     </div>
+    <br>
     <div class="form-group">
       <label class="control-label" for="rating">{{questions.E3}}</label>
       <div class="controls">
         <paper-slider data-desc="E3" name="rating" pin snaps max="10" step="1" value="{{ profile.answers.E3 }}"></paper-slider>
       </div>
     </div>
+    <br>
 
     <h3> What types of restaurants do you like? </h3>
     {{#each restaurantTypes}}
@@ -121,13 +164,15 @@
 
     <br>
     <input type="submit" value="Submit" class="btn btn-primary"/>
+    <!-- </form> -->
+    </div>
 
     {{else}}
       <label class="control-label"> please log in! </label>
       <script>window.location.replace("./");</script>
     {{/if}}
-  </form>
-
+  
+</form>
  
 
 </template>
