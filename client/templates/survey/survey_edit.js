@@ -17,7 +17,7 @@ Template.surveyEdit.helpers({
     return ret;
   },
   questions: {'C1': "If I want to achieve my dream job, I know exactly how I'm going to do it.", 
-              'C2': "If I have 10 seconds to decide whether or not I'm gonna make this 10meter dive, I'll decide in 10 seconds.",
+              'C2': "If I have 10 seconds to decide whether or not I'm gonna make this 10 meter dive, I'll decide in 10 seconds.",
               'C3': "I don't need a notepad. Because I can visualize all I need to write down!", 
 
               'O1': "I like talking about philosophy and other brainy things.", 
