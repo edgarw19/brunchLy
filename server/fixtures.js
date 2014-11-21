@@ -18,64 +18,76 @@ if (Posts.find().count() === 0) {
 if (Restaurants.find().count === 0) {
   Restaurants.insert({
     name: 'Thai Village',
-    type: 'Thai'
+    type: 'Thai',
+    address: '235 Nassau St, Princeton, NJ 08540',
+    phone: '(609) 683-3896'
   });
 
   Restaurants.insert({
     name: 'Naked Pizza',
-    type: 'Italian'
+    type: 'Italian',
+    address: '180 Nassau St, Princeton, NJ 08542',
+    phone: '(609) 924-4700'
   });
 
   Restaurants.insert({
     name: 'EPS Corner',
-    type: 'Chinese'
+    type: 'Chinese',
+    address: '238 Nassau St, Princeton, NJ 08542',
+    phone: '(609) 921-2388'
   });
 
   Restaurants.insert({
     name: 'Cheeburger Cheeburger',
-    type: 'American'
+    type: 'American',
+    address: '182 Nassau St, Princeton, NJ 08542',
+    phone: '(609) 921-0011'
   });
 
   Restaurants.insert({
     name: 'Mehek',
-    type: 'Indian'
+    type: 'Indian',
+    address: '164 Nassau St, Princeton, NJ 08542',
+    phone: '(609) 279-9191'
   });
 
   Restaurants.insert({
     name: 'Mamoun\'s',
-    type: 'Middle Eastern'
+    type: 'Middle Eastern',
+    address: '58 Easton Ave, New Brunswick, NJ 08901',
+    phone: '(732) 640-0794'
   });
 }
 
-if (Dummies.find().count() === 0) {
-  Dummies.insert({
-    email: "joannajw@princeton.edu",
-    values: [5, 2, 3, 4, 5]
-    , prevBrunches: []
-  });
+// if (Dummies.find().count() === 0) {
+//   Dummies.insert({
+//     email: "joannajw@princeton.edu",
+//     values: [5, 2, 3, 4, 5]
+//     , prevBrunches: []
+//   });
 
-  Dummies.insert({
-    email: "edgarw@princeton.edu",
-    values: [5, 2, 3, 4, 5]
-    , prevBrunches: []
-  });
+//   Dummies.insert({
+//     email: "edgarw@princeton.edu",
+//     values: [5, 2, 3, 4, 5]
+//     , prevBrunches: []
+//   });
 
-  Dummies.insert({
-    email: "yichengs@princeton.edu",
-    values: [5, 2, 3, 4, 5]
-    , prevBrunches: []
-  });
+//   Dummies.insert({
+//     email: "yichengs@princeton.edu",
+//     values: [5, 2, 3, 4, 5]
+//     , prevBrunches: []
+//   });
   // Dummies.insert({
   //   email: "joanna.j.wang@princeton.edu",
   //   values: [1, 1, 1, 1, 1]
   //   , prevBrunches: []
   // });
 
-  // Dummies.insert({
-  //   email: "bob",
-  //   values: [5, 2, 3, 4, 5]
-  //   , prevBrunches: []
-  // });
+// D
+//     email: "bob",
+//     values: [5, 2, 3, 4, 5]
+//     , prevBrunches: []
+//   });
 
   // Dummies.insert({
   //       email: "joe",

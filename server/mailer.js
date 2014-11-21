@@ -12,7 +12,7 @@ var sendEmails = function (origUserList, matchedUserList) {
 
     
     var apologySubject = "[Brunchly] Sorry!";
-    var apologyBody = "sorry get brunch with potato";
+  var apologyBody = "All our users have been matched. You'll get priority next week :)";
 
     for (var i = 0; i < origUserList.length; i++) {
 
@@ -20,15 +20,25 @@ var sendEmails = function (origUserList, matchedUserList) {
         var emailSubject = apologySubject; 
         var emailBody = apologyBody; 
 
-        if (matchedUserList[i][0] != null) {
+        if (matchedUserList[i][0] !== null) {
             var matchedBrunchers = matchedUserList[i]; 
 
-            emailBody = "go eat food with these people!\n";
+            emailBody = "You've been matched!\n";
+            emailBody += "Introducing your new friends : \n\n";
             emailSubject = "[Brunchly] You've been matched!";
             for (var j = 0; j < matchedBrunchers.length; j++) {
-                emailBody += getEmail(matchedBrunchers[j]) + "\n"
+              emailBody += getName(matchedBrunchers[j]) + " @: " + getEmail(matchedBrunchers[j]) + "\n"
+              emailBody += "About Me: " + getAboutMe(matchedBrunchers[j]);
+              emailBody += "\n\n"
             }   
         }
+      emailBody += "Some restaurants we'd recommend: \n";
+      var restaurants = Restaurants.find().fetch();
+      restaurants = shuffle(restaurants);
+      for (var i = 0; i < 3; i++){
+        emailBody += grabRestaurantDescription(restaurants[i]);
+      }
+      
         
         Email.send({
             from: "brunch@brunchly.com",
@@ -45,6 +55,30 @@ var sendEmails = function (origUserList, matchedUserList) {
 var getEmail = function(user) {
     return user.email; 
 }
+
+var shuffle = function(o){
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+}
+
+
+var getAboutMe = function(user){
+  return user.aboutme;
+}
+
+var getName = function(user){
+  var name = "";
+  name += user.firstName + " " + user.lastName;
+  return string;
+}
+
+var grabRestaurantDescription = function(restaurant) {
+  var restDescription = "Name: " + restaurant.name + "\n";
+  restDescription += "Type: " + restaurant.type + "\n";
+  restDescription += "Address: " + restaurant.address + "\n";
+  restDescription += "Phone: " + restaurant.phone + "\n\n\n";
+}
+
 
 
 
