@@ -12,7 +12,7 @@ var sendEmails = function (origUserList, matchedUserList) {
 
     
     var apologySubject = "[Brunchly] Sorry!";
-    var apologyBody = "All our users have been matched this week. You'll get priority next week :)";
+    var apologyBody = "All our users have been matched for brunch this week. You'll get priority next week :)";
 
     // var maxEmails = origUserList.length; 
     var maxEmails = 200; 
@@ -26,7 +26,7 @@ var sendEmails = function (origUserList, matchedUserList) {
         if (matchedUserList[i][0] !== null) {
             var matchedBrunchers = matchedUserList[i]; 
 
-            emailBody = "You've been matched! Go grab brunch this weekend with your new friends! \n_______\n\n";
+            emailBody = "You've been matched! Go grab brunch this weekend with your new friends! \n____________\n\n";
             emailBody += "Introducing your fellow brunchers: \n\n";
             emailSubject = "[Brunchly] You've been matched!";
             for (var j = 0; j < matchedBrunchers.length; j++) {
@@ -34,14 +34,16 @@ var sendEmails = function (origUserList, matchedUserList) {
               emailBody += "About Me: " + getAboutMe(matchedBrunchers[j]);
               emailBody += "\n\n"
             }   
+
+            emailBody += "____________\n\nSome restaurants we'd recommend: \n";
+            var restaurants = Restaurants.find().fetch();
+            restaurants = shuffle(restaurants);
+            for (var i = 0; i < 3; i++){
+              emailBody += grabRestaurantDescription(restaurants[i]);
+            }
+
         }
 
-        emailBody += "_______\n\nSome restaurants we'd recommend: \n";
-        var restaurants = Restaurants.find().fetch();
-        restaurants = shuffle(restaurants);
-        for (var i = 0; i < 3; i++){
-          emailBody += grabRestaurantDescription(restaurants[i]);
-        }
       
         Email.send({
             from: "brunch@brunchly.com",
