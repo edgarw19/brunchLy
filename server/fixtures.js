@@ -1,21 +1,23 @@
-if (Posts.find().count() === 0) {
-  Posts.insert({
-    title: 'Introducing Telescope',
-    url: 'http://sachagreif.com/introducing-telescope/'
-  });
+// if (Posts.find().count() === 0) {
+//   Posts.insert({
+//     title: 'Introducing Telescope',
+//     url: 'http://sachagreif.com/introducing-telescope/'
+//   });
 
-  Posts.insert({
-    title: 'Meteor',
-    url: 'http://meteor.com'
-  });
+//   Posts.insert({
+//     title: 'Meteor',
+//     url: 'http://meteor.com'
+//   });
 
-  Posts.insert({
-    title: 'The Meteor Book',
-    url: 'http://themeteorbook.com'
-  });
-}
+//   Posts.insert({
+//     title: 'The Meteor Book',
+//     url: 'http://themeteorbook.com'
+//   });
+// }
 
-if (Restaurants.find().count === 0) {
+if (Restaurants.find().count() == 0) {
+    console.log("inserting restaurants"); 
+
   Restaurants.insert({
     name: 'Thai Village',
     type: 'Thai',
@@ -128,4 +130,4 @@ if (Restaurants.find().count === 0) {
 // }
 
 
-// console.log("ALWAYS RUNNING");
+ console.log("ALWAYS RUNNING");
