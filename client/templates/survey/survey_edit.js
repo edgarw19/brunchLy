@@ -16,22 +16,21 @@ Template.surveyEdit.helpers({
     // console.log(ret); 
     return ret;
   },
-  
-   questions: {'C1': "I have a clear set of goals that I work towards in an orderly fashion", 
-              'C2': "I am comfortable making quick decisions under pressure.",
-              'C3': "I make lists (in my head or in writing) to break down tasks into.", 
+  questions: {'C1': "If I want to achieve my dream job, I know exactly how I'm going to do it.", 
+              'C2': "If I have 10 seconds to decide whether or not I'm gonna make this 10meter dive, I'll decide in 10 seconds.",
+              'C3': "I don't need a notepad. Because I can visualize all I need to write down!", 
 
-              'O1': "I enjoy intellectual pursuits for their own sake and are likely to derive satisfaction from theoretical discussion.", 
-              'O2': "I like trying new, foreign foods.", 
-              'O3': "My friends are mostly people with value systems similar to my own.", 
+              'O1': "I like talking about philosophy and other brainy things.", 
+              'O2': "New spicy Mediterranean food? I'm down.", 
+              'O3': "My friends like many of the same things I like.", 
 
-              'N1': "I tend to remain calm under pressure.", 
-              'N2': "I find that my mood can change strongly and rapidly throughout a day.", 
-              'N3': "I often feel jealous of the accomplishments of my friends and peers.", 
+              'N1': "Last minute free-throw to decide the game? No pressure for me.", 
+              'N2': "Sometimes I wake up pretty happy but by the end of the day, I don't feel like talking to anyone.", 
+              'N3': "I will be the best. NOBODY can be better than me!", 
 
-              'A1': "In group projects I am comfortable trusting others to stick to deadlines.", 
-              'A2': "I am empathetic: when one of my friends feels something, I usually do too.", 
-              'A3': "I have done things that I didn’t really want to simply because a friend asked me to.", 
+              'A1': "I definitely trust Bobby to finish the part of the project he's assigned.", 
+              'A2': "When my friend talks about her existential crisis, I'm pretty good at consoling her.", 
+              'A3': "If you ask me to eat that cheesecake 5 times, I'll probably cave in the fifth time.", 
 
               'E1': "I am comfortable smiling and getting to know strangers.", 
               'E2': "I am assertive in my beliefs and feel comfortable sharing them with others.", 
